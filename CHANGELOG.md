@@ -1,9 +1,4 @@
-# JSIronTable Change Log
-## Version 0.5
+# JSSteelTable Change Log
+## Version 0.1
 
-- Added Debug Logging option
-- Fixed option to enable disable 'sortable' functionality
-- Fixed option to enable disable 'sortable' functionality
-- Added 'cellfontsize' option to change Cell font size
-- Added 'headerfontsize' option to change Header font Size
-- Updated Table colors and CSS values
+- Fork from [raftopyannis/jsirontable](https://github.com/raftopyannis/jsirontable)

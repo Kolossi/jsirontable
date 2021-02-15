@@ -1,5 +1,9 @@
-# JSIronTable
-JS IronTable - A responsive Jquery Table for multiple purposes
+# JSSteelTable
+JS SteelTable - A responsive Jquery Table for multiple purposes
+
+This is a fork of [raftopyannis/jsirontable](https://github.com/raftopyannis/jsirontable),
+in order to remove draggable functionality not wanted, and to add the ability to have
+a 2D table (ie with columns produced from the data).
 
 This table provides a responsive JQuery table which includes:
 - Column Sorting
@@ -8,13 +12,13 @@ This table provides a responsive JQuery table which includes:
 - Custom column view
 - Column Rearrange
 
-An example of use is described on the example.js file
+Examples of use are show in the example.html file.
+
+Here's some simple examples of usage though:
 
 ```javascript
-
 var options = {
     data: songs,
-    ordering: true,
     fixedheader: true,
     scrollable: true,
     fitHeight: true,
@@ -36,7 +40,7 @@ var options = {
         },
     ]
 };
-$('.jsirontable').JSIronTable(options);
+$('.jssteeltable').JSSteelTable(options);
 
 ```
 
@@ -52,7 +56,6 @@ Example:
 ```javascript
 var options = {
     data: songs,
-    ordering: true,
     fixedheader: true,
     scrollable: true,
     fitHeight: true,
@@ -83,7 +86,7 @@ var options = {
     }
 };
 
-var jsirontable = $('.jsirontable').JSIronTable(options);
+var jssteeltable = $('.jssteeltable').JSSteelTable(options);
 
 ```
 
@@ -91,21 +94,20 @@ or declaring them in a later state
 
 ```javascript
 
-jsirontable.OnInitialized(function() {
+jssteeltable.OnInitialized(function() {
 });
 
-jsirontable.OnError(function(error) {
+jssteeltable.OnError(function(error) {
 });
 
-jsirontable.OnReload(function() {
+jssteeltable.OnReload(function() {
 });
 
-jsirontable.OnSort(function() {
+jssteeltable.OnSort(function() {
 });
 
-jsirontable.BeforeSort(function() {
+jssteeltable.BeforeSort(function() {
 });
 
 ```
 
-More updates and fixes coming soon..

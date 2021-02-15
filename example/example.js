@@ -12,7 +12,6 @@ var options = {
     scrollable: true, // Done
     fitHeight: true,
     sortable: true, // Done
-    draggableColumns: true,
     headerfontsize: "12pt", // Done
     cellfontsize: "12pt", // Done
     columns: [
@@ -34,38 +33,38 @@ var options = {
     ]
 };
 
-var irontable = $('.jsirontable').JSIronTable(options);
-irontable.OnInitialized(function()
+var jssteeltable = $('.jssteeltable').JSIronTable(options);
+jssteeltable.OnInitialized(function()
 {
     
 });
 
-irontable.OnError(function(error)
+jssteeltable.OnError(function(error)
 {
     
 });
 
-irontable.OnReload(function()
+jssteeltable.OnReload(function()
 {
     
 });
 
-irontable.OnSort(function()
+jssteeltable.OnSort(function()
 {
     
 });
 
-irontable.BeforeSort(function()
+jssteeltable.BeforeSort(function()
 {
     
 });
 
-//console.log(irontable.GetRows());
+//console.log(jssteeltable.GetRows());
 
 
 /*
-var SECOND_irontable = $('.second_jsirontable').JSIronTable(options);
-SECOND_irontable.OnInitialized(function()
+var SECOND_jssteeltable = $('.second_jssteeltable').JSIronTable(options);
+SECOND_jssteeltable.OnInitialized(function()
 {
     
 });*/
@@ -73,18 +72,18 @@ SECOND_irontable.OnInitialized(function()
 
 setTimeout(function()
 {
-    /* SECOND_irontable.options.data = [];
-    SECOND_irontable.Reload(); */
-    //irontable.Reload();
+    /* SECOND_jssteeltable.options.data = [];
+    SECOND_jssteeltable.Reload(); */
+    //jssteeltable.Reload();
     console.log("Reload");
 }, 3000);
 
 
-//console.log($('.jsirontable').JSIronTable());
+//console.log($('.jssteeltable').JSIronTable());
 
 function ClickActionBtn(data)
 {    
-    var row = irontable.GetRow(function(e)
+    var row = jssteeltable.GetRow(function(e)
     {    
         var found = null;
         if(e.data.id === data)
@@ -97,5 +96,5 @@ function ClickActionBtn(data)
     $(row.element).css({"background-color": "yellow"});
     $(row.element).addClass("disabled");
 
-    irontable.RemoveRow(row);
+    jssteeltable.RemoveRow(row);
 }
